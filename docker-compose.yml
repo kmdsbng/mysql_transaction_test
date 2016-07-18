@@ -1,0 +1,8 @@
+version: '2'
+services:
+  mysql1:
+    build: ./mysql_container/
+    volumes:
+    - ./mysql_data:/var/lib/mysql
+    ports:
+    - "13306:3306"
